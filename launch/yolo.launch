@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="yolov7" type="yolo.py" name="yolov7" output="screen">
+    <!-- <param name="model_path" value="$(find yolact_ros)/scripts/yolact/weights/yolact_plus_resnet50_54_800000.pth"/>
+    <param name="image_topic" value="/hand_camera/color/image_rect_color"/>
+    <param name="use_compressed_image" value="False"/>
+    <param name="publish_visualization" value="True"/>
+    <param name="publish_detections" value="True"/>
+    <param name="display_visualization" value="False"/>
+    <remap from="~camera_info" to="/hand_camera/color/camera_info"/> -->
+    <remap from="~image" to="/hand_camera/color/image_rect_color"/>
+  </node>
+</launch>
